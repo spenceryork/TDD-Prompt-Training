@@ -1,11 +1,10 @@
 'use strict';
 
 const { createWriteStream } = require('fs');
-const { generateClasses } = require("../data/class");
+const { generateClassList } = require("../data/class");
 
-const { generateEmployees } = require("../data/employees");
 
 // class data
-let classes = generateClasses();
+let classes = generateClassList();
 let classStream = createWriteStream(`./json/class.json`);
-empStream.write(JSON.stringify(classes));
+classStream.write(JSON.stringify(classes));
