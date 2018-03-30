@@ -1,0 +1,21 @@
+{
+  "name": "TDD-Prompt-Training",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "db:reset": "node db/build-db",
+    "start": "nodemon app.js",
+    "test": "nodemon --exec \"mocha --recursive\" -R list"
+  },
+  "engines": {
+    "node": "7.3.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
+    "express": "~4.14.1",
+    "faker": "^4.1.0",
+    "nodemon": "^1.17.2",
+    "sqlite3": "^3.1.9"
+  }
+}
