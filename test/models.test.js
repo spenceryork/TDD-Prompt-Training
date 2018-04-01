@@ -5,7 +5,10 @@ describe('getAll', () => {
     it('should be a function', () => {
         isFunction(getAll);
     });
-    it('should equal an object', () => {
-        equal(getAll);
-    })
+    it('should get an array of classes', () => {
+        return getAll()
+        .then( (classesReturned) => {
+            isArray(classesReturned);
+        }); 
+    });
 });
